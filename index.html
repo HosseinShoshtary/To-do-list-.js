@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- لینک به فایل CSS جدا -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>لیست کارها</h1>
+        <div id="task-stats">
+            <span id="total-tasks">0</span> کار | 
+            <span id="completed-tasks">0</span> انجام شده
+        </div>
+        <!-- اینجا کاربر کار جدید رو وارد می‌کنه -->
+        <input type="text" id="task-input" placeholder="کار جدید...">
+        <!-- دکمه برای اضافه کردن کار -->
+        <button id="add-btn">اضافه کن</button>
+        
+        <div id="sort-options">
+            <label for="sort">مرتب‌سازی:</label>
+            <select id="sort">
+                <option value="newest">جدیدترین اول</option>
+                <option value="oldest">قدیمی‌ترین اول</option>
+                <option value="completed-first">کارهای انجام شده اول</option>
+                <option value="completed-last">کارهای انجام نشده اول</option>
+            </select>
+        </div>
+        <!-- اینجا لیست کارها نمایش داده میشه -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- لینک به فایل جاوااسکریپت -->
+    <script src="script.js"></script>
+</body>
+</html>
